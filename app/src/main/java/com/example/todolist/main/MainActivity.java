@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AddEditActivity.class);
+                intent.putExtra("mode", 0);
                 startActivity(intent);
                 //숙제 : 플로팅 버튼을 클릭했을 때 다른 화면으로 넘어가기
                 //힌트 : intent를 사용해서 activity 화면 바꾸기
